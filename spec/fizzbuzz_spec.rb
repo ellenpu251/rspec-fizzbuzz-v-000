@@ -1,7 +1,14 @@
 require_relative './spec_helper.rb'
 require_relative '../fizzbuzz.rb'
-# We are missing a 'require_relative' here. Check README.md for instructions and an explanation! 
-def fizzbuzz
+# We are missing a 'require_relative' here. Check README.md for instructions and an explanation!
+def fizzbuzz(int)
+  if int % 3 == 0
+    "Fizz"
+  if int % 5 == 0
+    "Buzz"
+  if int % 4 == 0
+    nil
+  end
 end
 
 describe "fizzbuzz" do
